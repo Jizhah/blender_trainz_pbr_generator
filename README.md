@@ -1,5 +1,5 @@
 
-# Blender 4.1: Trainz PBR Material Generator
+# Blender Trainz PBR Material Generator
 
 This script helps you convert a base image into Trainz-compatible PBR material format (`.m.pbrmetal`) in Blender 4.1. It integrates into the Blender UI for easy access, allowing you to generate the necessary textures and set up the material nodes automatically.
 
@@ -34,19 +34,19 @@ This script helps you convert a base image into Trainz-compatible PBR material f
   pip install pillow
   ```
 
-### How to Set Up the Script in Blender
+### How to Install the Extension in Blender
 
 1. **Load Your Model and Texture**:
    - Select your 3D model in Blender.
    - Open the **Material Properties** panel.
    - Ensure your material has an **Image Texture node** with an image loaded (e.g., `metal.jpg`).
 
-2. **Add the Script to Blender UI**:
-   - Open the **Scripting** tab in Blender.
-   - Click on **New** to create a new script.
-   - Paste the script below into the editor and click **Run Script** to register the UI panel.
+2. **Install the Extension in Blender**:
+   - Go to **Edit > Preferences > Add-ons > Install...**.
+   - Select the downloaded `trainz_pbr_generator_blender41.zip` file.
+   - Enable the **Trainz PBR Generator** add-on by checking the box.
 
-3. **Use the Script from the UI**:
+3. **Use the Extension from the UI**:
    - After running the script, switch to the **3D View**.
    - In the **Tool Shelf** (press **T** if it's not visible), you will find a new **Trainz PBR Generator** panel.
    - **Select the object** you want to apply the material to.
@@ -86,7 +86,7 @@ These textures will be connected to the material nodes in Blender.
 
 ---
 
-# Blender 4.1: Trainz PBR 材质生成器
+# Blender Trainz PBR 材质生成器
 
 此脚本帮助您将基础图像转换为 Trainz 兼容的 PBR 材质格式（`.m.pbrmetal`），并集成到 Blender 4.1 的 UI 中，方便用户直接通过界面生成所需的贴图和设置材质节点。
 
@@ -133,7 +133,7 @@ These textures will be connected to the material nodes in Blender.
    - 点击 **新建** 创建一个新的脚本。
    - 将以下脚本粘贴到编辑器中，并点击 **运行脚本** 来注册 UI 面板。
 
-3. **通过 UI 使用脚本**：
+3. **通过 UI 使用插件**：
    - 运行脚本后，切换到 **3D 视图**。
    - 在 **工具架（T）** 中，您将看到一个新的 **Trainz PBR 生成器** 面板。
    - **选择对象**，确保它有图像纹理节点。
