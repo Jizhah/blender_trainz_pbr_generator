@@ -1,6 +1,6 @@
 bl_info = {
     "name": "Trainz PBR Generator",
-    "author": "ChatGPT",
+    "author": "Jing Bo Zhang",
     "version": (1, 0),
     "blender": (4, 1, 0),
     "location": "View3D > Sidebar > Tool Tab",
