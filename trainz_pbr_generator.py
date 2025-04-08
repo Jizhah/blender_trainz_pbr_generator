@@ -91,11 +91,14 @@ def setup_trainz_material(material):
     principled = nodes.new("ShaderNodeBsdfPrincipled")
     output = nodes.new("ShaderNodeOutputMaterial")
 
+    blend_file_directory = os.path.dirname(bpy.data.filepath)
+    base_img_rel_path = os.path.relpath(base_img_path, blend_file_directory)
+
     # STEP 4: Try to load images, ensure paths are valid
     try:
-        tex_albedo.image = bpy.data.images.load(albedo_path)
-        tex_normal.image = bpy.data.images.load(normal_path)
-        tex_params.image = bpy.data.images.load(params_path)
+        tex_albedo.image = bpy.data.images.load(os.path.join(blend_file_directory, albedo_path))
+        tex_normal.image = bpy.data.images.load(os.path.join(blend_file_directory, normal_path))
+        tex_params.image = bpy.data.images.load(os.path.join(blend_file_directory, params_path))
     except Exception as e:
         print(f"Error loading images: {e}")
         return
