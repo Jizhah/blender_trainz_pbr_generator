@@ -51,7 +51,7 @@ This script helps you convert a base image into Trainz-compatible PBR material f
 
 2. **Install the Extension in Blender**:
    - Go to **Edit > Preferences > Add-ons > Install...**.
-   - Select the downloaded `trainz_pbr_generator.zip` file.
+   - Select the downloaded `trainz_pbr_generator.py` file.
    - Enable the **Trainz PBR Generator** add-on by checking the box.
 
 3. **Use the Extension from the UI**:
@@ -144,7 +144,7 @@ These textures will be connected to the material nodes in Blender.
 
 2. **在Blender中安装插件**：
    - 进入**编辑 > 首选项 > 插件 > 安装...**。
-   - 选择下载的`trainz_pbr_generator.zip`文件。
+   - 选择下载的`trainz_pbr_generator.py`文件。
    - 通过勾选框启用**Trainz PBR Generator**插件。
 
 3. **通过UI使用插件**：
